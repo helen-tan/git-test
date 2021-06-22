@@ -1,5 +1,5 @@
 # Git Commands
-This is a practice repository created for the HKUST React course on Coursera. <br>
+This is a practice repository for practicing Git commands. <br>
 The following are some Git commands.
 
 ## Basic Git Commands
