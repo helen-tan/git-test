@@ -44,6 +44,11 @@ git log --oneline
 git checkout <commit identifier/number> <file name>
 ~~~~
 
+#### Inspect what has been changed
+* To check exactly what has been changed to a file. It shows the differences between the original file and the file that now has changes made to it.
+~~~
+git diff <a specific file or folder>
+~~~
 
 ## Online Git Repositories
 First, an online git repository named git-test is setup on Github (This repository that we are looking at now). <br>
