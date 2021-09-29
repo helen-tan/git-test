@@ -78,7 +78,7 @@ git clone <repository URL>
 A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. 
 The purpose of Branching is to enable developers to work in parallel dimensions and develop features separately. Also, working on a feature will require several commits. The master branch is the working code in production. If unfinished work is pushed into the master branch, it might become buggy and unstable. Having a branch will allow developers to work in an isolated environment without affecting the master branch. And once work is complete and the code is ready for production, the branch can be merged back into the master branch.
 #### See all branches
-* To see a list of all the current branches in the project, type git branch, with no arguments.
+* To see a list of all the current branches in the project, type ```git branch```, with no arguments.
 * A small star will be placed next to the curernt branch in which you are at.
 ~~~~
 git branch
@@ -116,3 +116,22 @@ git merge --no-ff <branch name>
 git branch -d <branch name>
 ~~~~
 * If you run git branch again, the branch will be gone
+
+## Create a Pull Request
+A Pull request is what anables you to tell others about changes you've pushed to a branch in a repository on GitHub. By creating a pull request, you’re proposing your changes and requesting that someone review and pull in your contribution and merge them into their branch.
+
+* To push the updated work to the GitHub repo in the form of a Pull Request, run the following command:
+~~~~
+git push origin <branch name>
+~~~~
+* After pushing the request, head back to the online Github repo, where it will show your branch and the push that was created. Then create the pull request.
+
+## Getting changes from an online/remote repository
+clone and fetch download remote code from a repository's remote URL to your local computer, merge is used to merge different people's work together with yours, and pull is a combination of fetch and merge.
+
+* To retrieve new work done by other people (```git fetch```) and combine them with your local changes (```git merge```), so that your work can be up-to-date with the recent changes, use git pull. git pull is a convenient shortcut for completing both git fetch and git merge in the same command:
+~~~~
+git pull origin <branch name>
+~~~~
+* ```git pull origin master``` will pull changes from the origin remote, master branch and merge them to the local checked-out branch.
+
