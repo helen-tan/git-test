@@ -74,3 +74,24 @@ Contents of the local git repo will now be pushed to the server side.
 ~~~~
 git clone <repository URL>
 ~~~~
+
+## Branching
+A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. 
+The purpose of Branching is to enable developers to work in parallel dimensions and develop features separately. Also, working on a feature will require several commits. The master branch is the working code in production. If unfinished work is pushed into the master branch, it might become buggy and unstable. Having a branch will allow developers to work in an isolated environment without affecting the master branch. And once work is complete and the code is ready for production, the branch can be merged back into the master branch.
+#### See all branches
+* To see a list of all the current branches in the project, type git branch, with no arguments.
+* A small star will be placed next to the curernt branch in which you are at.
+~~~~
+git branch
+~~~~
+#### Creating a new branch
+* This command will create a new branch in the project
+* Take note, this only creates the branch. To start adding commits to it, the next step is to switch from your current branch to the new branch (see next point).
+~~~~
+git branch <branch name>
+~~~~
+#### Switching between branches
+* To go to a branch and start making changes/commits, use this command:
+~~~
+git checkout <branch name>
+~~~
