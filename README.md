@@ -30,7 +30,6 @@ git add .
 ~~~~
 git commit -m "first commit"
 ~~~~
-
 #### Checking log of Git commits
 * To check the log of the commits to your Git repository
 ~~~~
@@ -95,3 +94,25 @@ git branch <branch name>
 ~~~
 git checkout <branch name>
 ~~~
+
+## Merging
+Before merging back into the master branch, remember to switch back to the master branch with
+~~~~
+git checkout master
+~~~~
+To see the difference between the master branch and your branch, type:
+~~~~
+git diff master..<branch name>
+~~~~
+After taking the above steps, you can proceed to merge the changes.
+#### Merging back into the master branch
+~~~~
+git merge --no-ff <branch name>
+~~~~
+#### Cleaning up - deleting branch
+* Once a branch has been merged into the master, we can remove the branch. Only the label for the branch will be removed. Our work and the commits will not be removed.
+* But if the branch has not been merged, the below command will output an error.
+~~~~
+git branch -d <branch name>
+~~~~
+* If you run git branch again, the branch will be gone
