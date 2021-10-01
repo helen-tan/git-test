@@ -135,3 +135,16 @@ git pull origin <branch name>
 ~~~~
 * ```git pull origin master``` will pull changes from the origin remote, master branch and merge them to the local checked-out branch.
 
+## Publishing a site on GitHub pages
+GitHub Pages is a static site hosting service for publishing a website directly on GitHub from a GitHub repository.
+#### Step 1: Create a branch called gh-pages
+* Create a special branch which is called ```gh-pages```, with ```git branch gh-pages```, then ```git checkout gh-pages``` to switch the working branch to gh-pages.
+* To create the gh-pages branch and go to it directly in the same step, run:
+~~~~
+git checkout -b gh-pages
+~~~~
+#### Step 2: Push the changes to to publish the site
+* Push the gh-pages branch, and the website will be hosted at <username>.github.io/<reponame> .
+~~~~
+git push origin gh-pages
+~~~~
