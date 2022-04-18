@@ -4,6 +4,10 @@ The following are some Git commands.
 
 ## Basic Git Commands
 * A folder named git-test is created in the local machine.
+* To create a new folder:
+~~~~
+mkdir <NEW_FOLDER_NAME>
+~~~~
 * The git-test folder is opened in an editor (VS Code), and an index.html file is added.
 
 #### Initializing folder as a Git repository
